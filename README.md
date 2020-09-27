@@ -21,7 +21,7 @@ Service new-ani flash:updateani.tcl
 
 Service data_service flash:servicescript3.tcl
 
-# map service new-ani under dial-peer
+#map service new-ani under dial-peer
 Dial-peer voice <> voip
 Incoming callednumber <>
 Service  new-ani
@@ -34,10 +34,10 @@ Call application session stop name <name of instance to be stopped>
   
   
   
-#Interface Shutdown TCL Script
+# Interface Shutdown TCL Script
  Business requirement: To identify poe down event and shutdown interfaces on which poe event was received.This was required to solve a switch issue wherein after poe failures on multiple interfaces cisco catalyst switch use to crash triggering complete downtime.
  
-#Business requirement: Toll Fraud was resulting into huge financial losses for the client. 
+# Business requirement: Toll Fraud was resulting into huge financial losses for the client. 
 Requirement was to specifically identify malicious calls which were made from same ANI to same destination concurrently. And once identified block the destination, so that the same destination is not called again from any other phone.
 
 Approach: Required a Real Time toll fraud check logic to identify these types of calls. Therefore a service script was created to keep track of all calls and identify malicious calls from it.
@@ -54,7 +54,7 @@ Service new-ani flash:checkcaller_v2.tcl
 
 Service data_service flash:blockcall_v5.tcl
 
-# map service new-ani under dial-peer
+#map service new-ani under dial-peer
 Dial-peer voice <> voip
 Incoming callednumber <>
 Service  new-ani
