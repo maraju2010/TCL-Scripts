@@ -1,0 +1,1 @@
+Business requirement: To identify poe down event and shutdown interfaces on which poe event was received.This was required to solve a switch issue wherein after poe failures on multiple interfaces cisco catalyst switch use to crash triggering complete downtime.
