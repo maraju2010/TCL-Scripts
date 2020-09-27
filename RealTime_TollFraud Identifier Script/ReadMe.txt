@@ -7,8 +7,7 @@ Configuration Steps:
 1) checkcaller_v2.tcl script needs to be run under Dial-peer and will be invoked for every call.
 
 2) blockcall_v5.tcl needs to be registered as service in Cisco GW. 
-It will keep track of calls and based on counter will return distinct ANI for every call to checkcaller_v2.tcl script which will be further utilized and insertedinto sip headers.
-
+It will keep track of calls and based on logic built will return flag for blocking or allowing to checkcaller_v2.tcl script based on the flag call will be routed to service provider.
 Please configure the script using below steps:
 Config t
 Application
