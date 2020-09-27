@@ -31,3 +31,8 @@ Call application session start <name of instance can be any word>  <data_service
 
 To stop session use command
 Call application session stop name <name of instance to be stopped>
+  
+  
+  
+ #Interface Shutdown TCL Script
+ Business requirement: To identify poe down event and shutdown interfaces on which poe event was received.This was required to solve a switch issue wherein after poe failures on multiple interfaces cisco catalyst switch use to crash triggering complete downtime.
